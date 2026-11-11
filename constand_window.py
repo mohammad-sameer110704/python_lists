@@ -2,11 +2,11 @@
 nums=list(map(int,input("Enter numbers : ").split()))
 k=int(input("Enter a number"))
 summ=[]
-r=0
-l=k
+l=0
+r=k
 s=0
-while(l <= len(nums)):
-    for i in range(r,l):
+while(r <= len(nums)):
+    for i in range(l,r):
         s += nums[i]
     summ.append(s)
     r += 1
@@ -15,21 +15,21 @@ while(l <= len(nums)):
 print(summ)
 
 # # Optimized code O(n)
-nums = list(map(int, input("Enter numbers: ").split()))
-k = int(input("Enter a number: "))
+# nums = list(map(int, input("Enter numbers: ").split()))
+# k = int(input("Enter a number: "))
 
-summ = []
-s = sum(nums[:k])
+# summ = []
+# s = sum(nums[:k])
 
-summ.append(s)
+# summ.append(s)
 
-for i in range(k, len(nums)):
-    s = s - nums[i-k]
-    s = s + nums[i]
+# for i in range(k, len(nums)):
+#     s = s - nums[i-k]
+#     s = s + nums[i]
 
-    summ.append(s)
+#     summ.append(s)
 
-print(summ)
+# print(summ)
 
 
 
